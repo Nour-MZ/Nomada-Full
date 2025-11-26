@@ -1,0 +1,6 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/Nour-MZ/frontend.git
+[submodule "nomada"]
+	path = nomada
+	url = https://github.com/Nour-MZ/nomada
