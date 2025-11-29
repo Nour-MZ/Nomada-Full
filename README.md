@@ -1,3 +1,11 @@
+# Cloning Note:
+
+Please run git clone --recurse-submodules https://github.com/nour-MZ/nomada-full  nomada-full so that you get the all files. 
+
+We created submoldules to organize our folder while maintaining push history
+
+Push/Commit history can be found in the nomada submodule (some files were also transferred using other ways) 
+
 # Docker usage
 
 This repo now ships Docker assets for both the FastAPI backend (`nomada`) and the Vite frontend (`frontend`) via `docker-compose.yml`.
