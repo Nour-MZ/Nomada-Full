@@ -1,0 +1,22 @@
+services:
+  backend:
+    build:
+      context: ./nomada
+    env_file:
+      - ./nomada/.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./nomada/databases:/app/databases
+    command: uvicorn api_server:app --host 0.0.0.0 --port 8000
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        # Frontend runs in the browser on the host; point to host-exposed backend.
+        VITE_API_URL: http://localhost:8000
+    ports:
+      - "4173:80"
+    depends_on:
+      - backend
