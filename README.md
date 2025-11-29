@@ -4,6 +4,7 @@ This repo now ships Docker assets for both the FastAPI backend (`nomada`) and th
 
 ## Prerequisites
 - Docker and Docker Compose installed
+
 - A populated `nomada/.env` with runtime secrets, e.g.:
   - `OPENAI_API_KEY=...` (required)
   - `DUFFEL_API_TOKEN=...` (required)
@@ -12,6 +13,7 @@ This repo now ships Docker assets for both the FastAPI backend (`nomada`) and th
   - `HOTELBEDS_API_KEY=...` (required)
   - `HOTELBEDS_SECRET=...` (required)
   - `SMTP_HOST=...`, `SMTP_PORT=587`, `SMTP_USER=...`, `SMTP_PASS=...`, `SMTP_FROM=...` (optional, for booking emails)
+
 
 ## Start Docker
 Ensure Docker Desktop/daemon is running. On Windows/Mac, open Docker Desktop; on Linux, start the Docker service (`sudo service docker start`). You can verify with:
