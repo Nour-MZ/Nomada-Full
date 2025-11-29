@@ -6,7 +6,11 @@ This repo now ships Docker assets for both the FastAPI backend (`nomada`) and th
 - Docker and Docker Compose installed
 - A populated `nomada/.env` with runtime secrets, e.g.:
   - `OPENAI_API_KEY=...` (required)
-  - `STRIPE_SECRET_KEY=...` (required for payments)
+  - `DUFFEL_API_TOKEN=...` (required)
+  - `HUGGINGFACE_API_KEY=...` (required)
+  - `GOOGLE_MAPS_API_KEY=...` (required)
+  - `HOTELBEDS_API_KEY=...` (required)
+  - `HOTELBEDS_SECRET=...` (required)
   - `SMTP_HOST=...`, `SMTP_PORT=587`, `SMTP_USER=...`, `SMTP_PASS=...`, `SMTP_FROM=...` (optional, for booking emails)
 
 ## Start Docker
